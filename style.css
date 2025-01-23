@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-color: #f0ecef;
+    padding: 50px 0;
+}
+main{
+    width: 1440px;
+    height: auto;
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 5px 10px 100px 100px 100px 50px;
+    /* grid-template-columns: 300px 300px 300px 300px 300px; */
+    grid-template-columns: repeat(4, 20%);
+    gap: 30px;
+    margin: auto;
+    justify-content: center;
+}
+section{
+    border-radius: 10px;
+}
+.one{
+    grid-row: 1/4;
+    grid-column: 2/4;
+    text-align: center;
+    background-color: hsl(256, 67%, 59%);
+    padding: 65px 50px;
+}
+.one h1{
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 4.5rem;
+}
+.one h1 span{
+    color: hsl(39, 100%, 71%);
+}
+.one .image1{
+    width: 220px;
+    margin: auto;
+}
+.one p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.two{
+    grid-row: 4/8;
+    grid-column: 2/3;
+    padding: 40px 0;
+    padding-left: 30px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.two .image2{
+    width: 370px;
+    margin-bottom: 10px;
+}
+.two h1{
+    font-size: 2.8rem;
+    line-height: 2.2rem;
+}
+.three{
+    grid-row: 4/8;
+    grid-column: 3/4;
+    overflow: hidden;
+    padding: 0 30px;
+    padding-top: 30px;
+    background-color: hsl(39, 100%, 71%);
+}
+.three h1{
+    font-size: 2.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 30px;
+}
+.four{
+    grid-row: 1/8;
+    grid-column: 4/5;
+    background-color: hsl(254, 88%, 90%);
+    padding: 65px 0;
+    padding-left: 35px;
+    overflow: hidden;
+}
+.four h1{
+    font-size: 2.5rem;
+    line-height: 2rem;
+    margin-bottom: 25px;
+}
+.four .image4{
+    height: 360px;
+    width: 430px;
+    margin-bottom: 20px;
+}
+.four .image4 img{
+    height: 100%;
+}
+.four p{
+    font-size: 1.6rem;
+    padding-right: 30px;
+    line-height: 1.5rem;
+}
+.five{
+    grid-row: 8/11;
+    grid-column: 3/5;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: hsl(256, 67%, 59%);
+}
+.five .image5{
+    width: 300px;
+}
+.five h1{
+    font-size: 2.6rem;
+    color: #fff;
+    width: 300px;
+    line-height: 2.4rem;
+    padding-left: 10px;
+}
+.six{
+    grid-row: 8/11;
+    grid-column: 2/3;
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+.six h1{
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+}
+.six p{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+.seven{
+    grid-row: 1/5;
+    grid-column: 1/2;
+    background-color: #faeee2;
+    padding: 90px 30px;
+}
+.seven h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 2.5rem;
+}
+.seven h1 span{
+    color: blueviolet;
+}
+.seven .image7{
+    width: 100%; 
+}
+img{
+    width: 100%;
+}
+.eight{
+    grid-row: 5/11;
+    grid-column: 1/2;
+    padding: 30px 15px 30px 30px;
+    background-color: hsl(39, 100%, 71%);
+}
+.eight h1{
+    font-size: 2.8rem;
+    line-height: 2.3rem;
+    margin-bottom: 65px;
+}
+.eight .image8{
+    height: 270px; 
+}
+.eight .image8 img{
+    height: 100%; 
+}
+
+@media screen and (max-width: 375px){
+    body{
+        width: 100%;
+        height: auto;
+        background-color: #f0ecef;
+        padding: 50px 20px;
+    }
+    main{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    section{
+        border-radius: 10px;
+    }
+    .one{ 
+        text-align: center;
+        background-color: hsl(256, 67%, 59%);
+        padding: 50px 30px;
+    }
+    .one h1{
+        font-size: 3rem;
+        color: #fff;
+        margin-bottom: 20px;
+        line-height: 3rem;
+    }
+    .two{
+        padding: 30px;
+    }
+    .two .image2{
+        width: 100%;
+    }
+    .two h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    .three{
+        height: 230px;
+    }
+    .three h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 10px;
+    }
+    .three .image3{
+        width: 69%;
+    }
+    .four{
+        background-color: hsl(254, 88%, 90%);
+        padding: 30px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .four h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 20px;
+    }
+    .four .image4{
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .four p{
+        font-size: 1.25rem;
+        padding-right: 0;
+    }
+    .five{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 70px;
+        background-color: hsl(256, 67%, 59%);
+    }
+    .five .image5{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .five h1{
+        padding: 0 40px;
+        font-size: 1.8rem;
+        line-height: 1.5rem;
+    }
+    .six{
+        text-align: left;
+    }
+    .six h1{
+        font-size: 2.5rem;
+    }
+    .six p{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .six .image6{
+        width: 160px;
+    }
+    .seven{
+        padding: 30px;
+    }
+    .seven h1{
+        font-size: 1.9rem;
+        margin-bottom: 25px;
+        line-height: 1.5rem;
+    }
+    .seven h1 span{
+        color: blueviolet;
+    }
+    .seven .image7{
+        width: 180px; 
+    }
+    img{
+        width: 100%;
+    }
+    .eight{
+        padding: 30px;
+    }
+    .eight h1{
+        font-size: 2rem;
+        margin-bottom: 30px;
+        line-height: 1.7rem;
+    }
+    .eight .image8{
+        height: 230px;
+        width: 230px; 
+    }
+    .eight .image8 img{
+        height: 100%; 
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 550px) {
+    body{
+        width: 100%;
+        height: auto;
+        background-color: #f0ecef;
+        padding: 50px 20px;
+    }
+    main{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+    section{
+        border-radius: 10px;
+    }
+    .one{ 
+        text-align: center;
+        background-color: hsl(256, 67%, 59%);
+        padding: 50px 30px;
+    }
+    .one h1{
+        font-size: 4rem;
+        color: #fff;
+        margin-bottom: 20px;
+        line-height: 4.5rem;
+    }
+    .two h1{
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    .three{
+        height: 290px;
+    }
+    .three h1{
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-bottom: 30px;
+    }
+    .three .image3{
+        width: 69%;
+    }
+    .four{
+        background-color: hsl(254, 88%, 90%);
+        padding: 30px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .four h1{
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-bottom: 25px;
+    }
+    .four .image4{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .five{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 70px;
+        background-color: hsl(256, 67%, 59%);
+    }
+    .five .image5{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .five h1{
+        padding-left: 0;
+    }
+    .six{
+        text-align: left;
+    }
+    .six h1{
+        font-size: 3.5rem;
+    }
+    .six .image6{
+        width: 200px;
+    }
+    .seven{
+        padding: 30px;
+    }
+    .seven h1{
+        font-size: 2.7rem;
+        margin-bottom: 20px;
+        line-height: 2.5rem;
+    }
+    .seven h1 span{
+        color: blueviolet;
+    }
+    .seven .image7{
+        width: 250px; 
+    }
+    img{
+        width: 100%;
+    }
+    .eight{
+        padding: 30px;
+    }
+    .eight h1{
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    .eight .image8{
+        height: 270px;
+        width: 290px; 
+    }
+    .eight .image8 img{
+        height: 100%; 
+    }
+}
