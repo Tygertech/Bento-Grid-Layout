@@ -10,15 +10,15 @@ body{
     padding: 50px 0;
 }
 main{
-    width: 1440px;
+    width: 1090px;
     height: auto;
     display: grid;
-    grid-template-rows: 100px 100px 100px 100px 5px 10px 100px 100px 100px 50px;
+    grid-template-rows: 50px 100px 100px 70px 0 10px 100px 100px 100px 0;
     /* grid-template-columns: 300px 300px 300px 300px 300px; */
-    grid-template-columns: repeat(4, 20%);
+    grid-template-columns: repeat(4, 250px);
     gap: 30px;
+    /* border: 2px solid red; */
     margin: auto;
-    justify-content: center;
 }
 section{
     border-radius: 10px;
@@ -28,13 +28,13 @@ section{
     grid-column: 2/4;
     text-align: center;
     background-color: hsl(256, 67%, 59%);
-    padding: 65px 50px;
+    padding: 50px 20px;
 }
 .one h1{
-    font-size: 4rem;
+    font-size: 3.7rem;
     color: #fff;
-    margin-bottom: 20px;
-    line-height: 4.5rem;
+    margin-bottom: 30px;
+    line-height: 3rem;
 }
 .one h1 span{
     color: hsl(39, 100%, 71%);
@@ -42,6 +42,7 @@ section{
 .one .image1{
     width: 220px;
     margin: auto;
+    margin-bottom: 5px;
 }
 .one p{
     font-size: 1.5rem;
@@ -50,55 +51,55 @@ section{
 .two{
     grid-row: 4/8;
     grid-column: 2/3;
-    padding: 40px 0;
-    padding-left: 30px;
+    padding: 20px 0;
+    padding-left: 20px;
     background-color: #fff;
     overflow: hidden;
 }
 .two .image2{
-    width: 370px;
-    margin-bottom: 10px;
+    width: 315px;
+    margin-bottom: 20px;
 }
 .two h1{
-    font-size: 2.8rem;
-    line-height: 2.2rem;
+    font-size: 2rem;
+    line-height: 1.6rem;
 }
 .three{
     grid-row: 4/8;
     grid-column: 3/4;
     overflow: hidden;
-    padding: 0 30px;
-    padding-top: 30px;
+    padding: 0 20px;
+    padding-top: 20px;
     background-color: hsl(39, 100%, 71%);
 }
 .three h1{
-    font-size: 2.8rem;
-    line-height: 2.2rem;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    line-height: 1.7rem;
+    margin-bottom: 14px;
 }
 .four{
     grid-row: 1/8;
     grid-column: 4/5;
     background-color: hsl(254, 88%, 90%);
-    padding: 65px 0;
-    padding-left: 35px;
+    padding: 40px 0;
+    padding-left: 30px;
     overflow: hidden;
 }
 .four h1{
-    font-size: 2.5rem;
-    line-height: 2rem;
-    margin-bottom: 25px;
+    font-size: 2rem;
+    line-height: 1.6rem;
+    margin-bottom: 20px;
 }
 .four .image4{
-    height: 360px;
-    width: 430px;
+    height: 280px;
+    width: 350px;
     margin-bottom: 20px;
 }
 .four .image4 img{
     height: 100%;
 }
 .four p{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding-right: 30px;
     line-height: 1.5rem;
 }
@@ -107,44 +108,46 @@ section{
     grid-column: 3/5;
     display: flex;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     background-color: hsl(256, 67%, 59%);
 }
 .five .image5{
-    width: 300px;
+    width: 280px;
 }
 .five h1{
-    font-size: 2.6rem;
+    font-size: 2.25rem;
     color: #fff;
     width: 300px;
-    line-height: 2.4rem;
+    line-height: 2rem;
     padding-left: 10px;
 }
 .six{
     grid-row: 8/11;
     grid-column: 2/3;
     background-color: #fff;
-    padding: 30px;
-    text-align: center;
+    padding: 20px;
 }
 .six h1{
-    font-size: 4.5rem;
-    margin-bottom: 10px;
+    font-size: 3.7rem;
+    margin-bottom: px;
 }
 .six p{
-    font-size: 1.5rem;
-    margin-bottom: 40px;
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+}
+.six .image6{
+    width: 180px;
 }
 .seven{
     grid-row: 1/5;
     grid-column: 1/2;
     background-color: #faeee2;
-    padding: 90px 30px;
+    padding: 60px 20px;
 }
 .seven h1{
-    font-size: 3rem;
-    margin-bottom: 20px;
-    line-height: 2.5rem;
+    font-size: 2.7rem;
+    margin-bottom: 25px;
+    line-height: 2.2rem;
 }
 .seven h1 span{
     color: blueviolet;
@@ -158,16 +161,16 @@ img{
 .eight{
     grid-row: 5/11;
     grid-column: 1/2;
-    padding: 30px 15px 30px 30px;
+    padding: 20px 10px 20px 20px;
     background-color: hsl(39, 100%, 71%);
 }
 .eight h1{
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     line-height: 2.3rem;
-    margin-bottom: 65px;
+    margin-bottom: 70px;
 }
 .eight .image8{
-    height: 270px; 
+    height: 240px; 
 }
 .eight .image8 img{
     height: 100%; 
@@ -319,49 +322,53 @@ img{
         flex-direction: column;
 
     }
-    section{
-        border-radius: 10px;
-    }
     .one{ 
         text-align: center;
         background-color: hsl(256, 67%, 59%);
         padding: 50px 30px;
     }
     .one h1{
-        font-size: 4rem;
+        font-size: 3.7rem;
         color: #fff;
         margin-bottom: 20px;
-        line-height: 4.5rem;
+    }
+    .two{
+        padding: 20px;
+    }
+    .two .image2{
+        width: 100%;
     }
     .two h1{
-        font-size: 2rem;
-        line-height: 2.2rem;
+        font-size: 1.8rem;
     }
     .three{
-        height: 290px;
+        height: 245px;
     }
     .three h1{
-        font-size: 2rem;
-        line-height: 2rem;
-        margin-bottom: 30px;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
     }
     .three .image3{
-        width: 69%;
+        width: 65%;
     }
     .four{
         background-color: hsl(254, 88%, 90%);
-        padding: 30px;
+        padding: 30px 20px;
         overflow: hidden;
         text-align: center;
     }
     .four h1{
         font-size: 2rem;
         line-height: 2rem;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     .four .image4{
         width: 100%;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
+    }
+    .four p{
+        font-size: 1.5rem;
+        padding: 0 10px;
     }
     .five{
         display: flex;
@@ -381,7 +388,10 @@ img{
         text-align: left;
     }
     .six h1{
-        font-size: 3.5rem;
+        font-size: 3rem;
+    }
+    .six p{
+        font-size: 1.5rem;
     }
     .six .image6{
         width: 200px;
@@ -390,9 +400,9 @@ img{
         padding: 30px;
     }
     .seven h1{
-        font-size: 2.7rem;
-        margin-bottom: 20px;
-        line-height: 2.5rem;
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+        line-height: 2rem;
     }
     .seven h1 span{
         color: blueviolet;
@@ -407,12 +417,12 @@ img{
         padding: 30px;
     }
     .eight h1{
-        font-size: 2.5rem;
-        margin-bottom: 30px;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
     }
     .eight .image8{
         height: 270px;
-        width: 290px; 
+        width: 260px; 
     }
     .eight .image8 img{
         height: 100%; 
